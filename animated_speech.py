@@ -2,7 +2,7 @@ from naoqi import ALProxy
 import yaml
 import sys
 
-sys.path.append('C:\\Data\\Desktop\\GitHub\\EhBAI\\nao\\pythonsdk\\lib')
+sys.path.append('C:\\Data\\Desktop\\GitHub\\EhBAI\\nao\\Nao-Client\\pythonsdk\\lib')
 
 ### Custom loading of utterances (fixed loading double backslashes)
 class CustomLoader(yaml.SafeLoader):
@@ -35,7 +35,7 @@ print ("postures family available: " + str(posture.getPostureList()))
 print ("postures available: " + posture.getPostureFamily())
 
 ### Stand
-#posture.goToPosture("StandZero",1)
+posture.goToPosture("Stand",1)
 
 ### Dutch
 def Set_Dutch():
@@ -93,12 +93,12 @@ Nuanced_English()
 # animatedSpeech.say("^pCall(ALTextToSpeech.say('Hello'))")
 # animatedSpeech.say('^pCall(ALRobotPosture.goToPosture("Stand",1)) Ok, I stand.') 
 # animatedSpeech.say("^pCall(ALMotion.wakeUp()) Ok, I wake up.") 
-animatedSpeech.say("^start(animations/Stand/Gestures/Hey_1) Hi! How are you?")
+# animatedSpeech.say("^start(animations/Stand/Gestures/Hey_1) Hi! How are you?")
 
 ### AnimatedSpeech
 # animatedSpeech.say(utterance['startup_dutch_0'])
 #animatedSpeech.say("\\rspd=100\\ \\vct=100\\ ^mode(disabled) \\wait=5\\  Hello there! \\eos=1\\ It's wonderful to see you. I hope you're having a great day!")
-# animatedSpeech.say(utterance['emphasis_2'])
+animatedSpeech.say(utterance['sample_builtin'])
 # animatedSpeech.say(utterance['emphasis_2'])
 # animatedSpeech.say(utterance['emphasis_0'])
 

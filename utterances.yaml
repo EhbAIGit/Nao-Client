@@ -1,7 +1,16 @@
 sample1: Hello, I am a happy robot! The speech synthesis is working fine.
+sample0: ^start(animations/Stand/Gestures/Hey_1) One.  ^wait(animations/Stand/Gestures/Hey_1) Two.
 sample2: Hello! ^start(animations/Stand/Gestures/Hey_1) Nice to meet you ^wait(animations/Stand/Gestures/Hey_1) ^start(animations/Stand/Gestures/YouKnowWhat_1) Today, I want to explain a few things about myself
 sample3: Hello. Look I can stop moving ^mode(disabled) and after I can resume moving ^mode(contextual), you see ?
 sample_wake: ^pCall(ALMotion.wakeUp()) Ok, I wake up. 
+
+sample_builtin: >
+    Hello everyone, thanks for joining us today!
+    We are here to explore some amazing advancements in technology.
+    First, let's discuss the latest trends in artificial intelligence.
+    What implications do these developments have for our future?
+    It's crucial to understand the ethics involved.
+    We can choose to use AI for good or for less noble causes.
 
 gestures_timing: >
     \\rspd=80\\ ^mode(disabled) 
